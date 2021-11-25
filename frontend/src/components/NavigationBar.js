@@ -14,6 +14,7 @@ export default function NavigationBar(){
                 <Nav className="ms-auto">
                     <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/ranking">Ranking</Nav.Link></Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
