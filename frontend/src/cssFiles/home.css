@@ -11,18 +11,30 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
   }
-  
-  .caroussel{
-    margin-top : 2em;
+
+  /*Component carrousel*/
+  .textNewsTitle{
+    margin-left: 40vw;
+    padding-top: 3vw;
   }
 
   .wrap{
-    background-image:url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image:url(../assets/back_news.JPG);
     background-size: cover;
-    height: calc(100% + 50px);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20vw;
   }
 
   .carouselComp {
-    width:640px;
-    height:360px;
+    margin-left: 30vw;
+    padding-top: 3vw;
+    width:700px;
+    height:450px;
   }
+
+  .carousel_caption{
+    padding-top: 2vw;
+  }
+
+ /*Component match and results*/
