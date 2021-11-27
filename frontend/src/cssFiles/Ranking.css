@@ -1,24 +1,21 @@
-/*.easternRanking {
-    margin-left: 2%;
-    border: solid #59727c;
-    width: 40%;
-    border-radius: 1%;
+
+h1 {
+   text-align: center;
 }
 
-.westernRanking {
-    margin-left: 2%;
-    border: solid #59727c;
-    width: 40%;
-    border-radius: 1%;
-}*/
-
+h3 {
+   margin-left: 20%;
+   margin-right: 60%;
+   background: linear-gradient(230.46deg, #5F5FF3 -2.98%, #B67DFF 68.14%, #FF83CD 104.54%);
+}
 .easternRanking {
-    margin-left: 2%;
-    width: 40%;
+    margin-left: 20%;
+    width: 60%;
     position: relative;
     color: #8F8F8F;
     background: #fff;
     border-radius: 10px;
+    
  }
  .easternRanking:before {
     content: '';
@@ -34,8 +31,8 @@
  }
 
  .westernRanking {
-    margin-left: 2%;
-    width: 40%;
+    margin-left: 20%;
+    width: 60%;
     position: relative;
     color: #8F8F8F;
     background: #fff;

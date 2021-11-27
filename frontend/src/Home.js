@@ -1,6 +1,7 @@
 import React from 'react';
 import ControlledCarousel from './components/ControlledCarousel';
 import MatchResults from './components/MatchResults';
+import TopRanking from './components/TopRanking'
 import './cssFiles/home.css';
 
 export default function Home(){
@@ -20,6 +21,7 @@ export default function Home(){
         <div>
             <p></p>
             <p>Mettre le component des rankings ici</p>
+            <TopRanking/>
         </div>
         </>
     )

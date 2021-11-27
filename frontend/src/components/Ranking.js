@@ -1,4 +1,5 @@
 import React, {ListItem} from 'react';
+import {Table} from 'react-bootstrap';
 import {getRanking} from '../API/API_Ranking.js'
 import DetailRanking from './DetailRanking.js';
 
@@ -14,7 +15,7 @@ class Ranking extends React.Component {
           super(props)
           this.state = {
             teamsWestern: [],
-            teamsEastern: []
+            teamsEastern: [],
           }
         }
   
@@ -37,10 +38,8 @@ class Ranking extends React.Component {
                 return a.rank.conference - b.rank.conference;
                 })
             })
-            console.log(this.state.teamsEastern)
-            console.log(this.state.teamsWestern)
-
-
+            //console.log(this.state.teamsEastern)
+            //console.log(this.state.teamsWestern)
           })
         }
 
@@ -48,15 +47,43 @@ class Ranking extends React.Component {
 
       render() {
           return (
-            <div>
+            <div class="wraper">
               <h1>NBA Rankings</h1>
               <h3> Eastern Conference</h3>
               <div class="easternRanking">
-                  {this.state.teamsEastern.map(c => <DetailRanking key={c.id} rank={c.rank.conference} name={c.name} market={c.market}/>)}
+              <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    <th class="col-md-1">Rank</th>
+                    <th class="col-md-2">Team</th>
+                    <th class="col-md-1">W</th>
+                    <th class="col-md-1">L</th>
+                    <th class="col-md-1">%</th>
+                    <th class="col-md-1">PF</th>
+                    <th class="col-md-1">PA</th>
+                    <th class="col-md-1">+/-</th>
+                  </tr>
+                </thead>
+              </Table>
+                  {this.state.teamsEastern.map(c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} market={c.market}/>)}
               </div> 
               <h3> Western Conference</h3>
               <div class="westernRanking">
-                  {this.state.teamsWestern.map(c => <DetailRanking key={c.id} rank={c.rank.conference} name={c.name} market={c.market}/>)}
+              <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    <th class="col-md-1">Rank</th>
+                    <th class="col-md-2">Team</th>
+                    <th class="col-md-1">W</th>
+                    <th class="col-md-1">L</th>
+                    <th class="col-md-1">%</th>
+                    <th class="col-md-1">PF</th>
+                    <th class="col-md-1">PA</th>
+                    <th class="col-md-1">+/-</th>
+                  </tr>
+                </thead>
+              </Table>
+                  {this.state.teamsWestern.map(c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} market={c.market}/>)}
               </div> 
 
                 </div>
