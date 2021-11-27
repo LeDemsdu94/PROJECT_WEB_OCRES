@@ -66,7 +66,7 @@ class Ranking extends React.Component {
                 </thead>
               </Table>
                   {this.state.teamsEastern.map(c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} market={c.market}/>)}
-              </div> 
+              </div> <br/> <br/>
               <h3> Western Conference</h3>
               <div class="westernRanking">
               <Table striped bordered hover>
