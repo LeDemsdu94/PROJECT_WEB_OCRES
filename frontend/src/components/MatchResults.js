@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Table } from 'react-bootstrap';
-import '../cssFiles/home.css';
+import { Tab, Table } from 'react-bootstrap';
+import '../cssFiles/DetailResults.css';
 import {getMatchResults} from '../API/API_MatchResults'
+import DetailResults from './DetailResults';
 import { imagesList } from '../images'
 
 export default class MatchResults extends Component {
@@ -43,28 +44,24 @@ export default class MatchResults extends Component {
       else{
 
         return (
-          <Table striped bordered hover>
-            <thead>
-              <tr>
-                <th>Logo Home Team</th>
-                <th>Home Team</th>
-                <th>Score</th>
-                <th>Away Team</th>
-                <th>Logo Away Team</th>
-              </tr>
-            </thead>
-            {items.games.slice(260, (tableauVar+5)).map(item => (
-            <tbody key={item.id}>
-              <tr>
-                <td>LOGO</td>
-                <td>{item.home.name}</td>
-                <td>{item.home_points} - {item.away_points}</td>
-                <td>{item.away.name}</td>
-                <td>LOGO</td>
-              </tr>
-            </tbody>
-            ))}
-          </Table>
+          <div>
+              <Table bordered hover >
+                <thead className="table_thead">
+                  <tr>
+                    <th>Logo Home Team</th>
+                    <th>Home Team</th>
+                    <th>Score</th>
+                    <th>Away Team</th>
+                    <th>Logo Away Team</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {items.games.slice(260, (tableauVar+5)).map(c => 
+                    <DetailResults key={c.id} home={c.home.name} homePoints={c.home_points} 
+                    away={c.away.name} awayPoints={c.away_points}/>)}
+                </tbody>
+              </Table> 
+            </div>
         );
       }
 

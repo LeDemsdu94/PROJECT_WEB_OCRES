@@ -13,7 +13,7 @@ export default function Home(){
         </div>
 
         <div>
-            <h2>Match and results</h2>
+            <h2 className="matchResults">Match and results</h2>
             <MatchResults />
             <p>Mettre le component des matchs et résultats ici</p>
         </div>
