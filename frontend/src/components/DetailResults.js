@@ -1,5 +1,5 @@
 import React from 'react'
-import '../cssFiles/DetailRanking.css';
+import '../cssFiles/DetailResults.css';
 import '../cssFiles/home.css'
 
 class DetailResults extends React.Component {

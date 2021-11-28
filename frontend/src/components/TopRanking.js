@@ -51,7 +51,7 @@ class TopRanking extends React.Component {
               <h1>Western Conference Top 5</h1> <br/>
               <div class="easternRanking">
               <Table striped bordered hover>
-                <thead>
+                <thead className="table_thead">
                   <tr>
                     <th class="col-md-1">Rank</th>
                     <th class="col-md-2">Team</th>
@@ -63,13 +63,17 @@ class TopRanking extends React.Component {
                     <th class="col-md-1">+/-</th>
                   </tr>
                 </thead>
+                <tbody>
+                    {this.state.teamsEastern.map
+                    (c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} 
+                    market={c.market}/>)}
+                </tbody>
               </Table>
-                  {this.state.teamsEastern.map(c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} market={c.market}/>)}
-              </div> <br/> <br/> <br/> 
+                  </div> <br/> <br/> <br/> 
               <h1>Eastern Conference Top 5</h1> <br/>
               <div class="westernRanking">
               <Table striped bordered hover>
-                <thead>
+                <thead className="table_thead">
                   <tr>
                     <th class="col-md-1">Rank</th>
                     <th class="col-md-2">Team</th>
@@ -81,9 +85,13 @@ class TopRanking extends React.Component {
                     <th class="col-md-1">+/-</th>
                   </tr>
                 </thead>
+                <tbody>
+                    {this.state.teamsWestern.map
+                    (c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} 
+                    market={c.market}/>)}
+                </tbody>
               </Table>
-                  {this.state.teamsWestern.map(c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} market={c.market}/>)}
-              </div> 
+                  </div> 
 
                 </div>
           )

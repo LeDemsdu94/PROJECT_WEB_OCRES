@@ -1,7 +1,9 @@
 import React from 'react'
 import {Table} from 'react-bootstrap'
 import {getStanding} from '../API/API_Standing'
-import '../cssFiles/DetailRanking.css';
+import '/Users/henripetrelli/Desktop/PROJECT_WEB_OCRES/frontend/src/cssFiles/Ranking.css';
+
+import '../cssFiles/Ranking.css';
 
 class DetailRanking extends React.Component {
 
@@ -64,10 +66,8 @@ class DetailRanking extends React.Component {
           return (
             
               //console.log(this.props),
-              <Table striped bordered hover>
-                  
-                <tbody>
-                  <tr>
+              
+                  <tr className="table_tr">
                     <td class="col-md-1">{this.props.rank} </td>
                     <td class="col-md-2">{this.props.name}</td>
                     <td class="col-md-1">{nbWins}</td>
@@ -78,8 +78,6 @@ class DetailRanking extends React.Component {
                     <td class="col-md-1">{diff}</td>
                   </tr>
                   
-                </tbody>
-              </Table>
           )
       }
   }
