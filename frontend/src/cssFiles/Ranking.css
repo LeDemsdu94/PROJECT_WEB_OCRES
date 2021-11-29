@@ -16,10 +16,13 @@ h1 {
    text-align: center;
 }
 
-h3 {
-   margin-left: 20%;
-   margin-right: 60%;
+.titre {
+   text-align: center;
+   margin-left: 32%;
+   margin-right: 32%;
    background: linear-gradient(230.46deg, #5F5FF3 -2.98%, #B67DFF 68.14%, #FF83CD 104.54%);
+   color: white;
+   border-radius: 50%;
 }
 .easternRanking {
     margin-left: 20%;

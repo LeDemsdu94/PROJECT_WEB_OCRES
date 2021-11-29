@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import NoMatch from './NoMatch';
 import Ranking from './components/Ranking';
+import TeamStatistics from './components/TeamStatistics';
 import Layout from './components/Layout';
 import NavigationBar from './components/NavigationBar';
 

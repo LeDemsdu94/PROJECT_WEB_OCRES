@@ -49,7 +49,7 @@ class Ranking extends React.Component {
           return (
             <div class="wraper">
               <h1>NBA Rankings</h1>
-              <h3> Eastern Conference</h3>
+              <h3 className="titre" > Eastern Conference</h3> <br/>
               <div class="easternRanking">
               <Table striped bordered hover>
                 <thead className="table_thead">
@@ -71,7 +71,7 @@ class Ranking extends React.Component {
                 </tbody>
               </Table>
                   </div> <br/> <br/>
-              <h3> Western Conference</h3>
+              <h3 className="titre" > Western Conference</h3> <br/>
               <div class="westernRanking">
               <Table striped bordered hover>
                 <thead> 
