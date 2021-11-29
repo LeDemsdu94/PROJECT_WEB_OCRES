@@ -1,12 +1,28 @@
+body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+     sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+     monospace;
+ }
 
 h1 {
    text-align: center;
 }
 
-h3 {
-   margin-left: 20%;
-   margin-right: 60%;
+.titre {
+   text-align: center;
+   margin-left: 32%;
+   margin-right: 32%;
    background: linear-gradient(230.46deg, #5F5FF3 -2.98%, #B67DFF 68.14%, #FF83CD 104.54%);
+   color: white;
+   border-radius: 50%;
 }
 /*Bordure du tableau*/
 .easternRanking {
@@ -52,3 +68,14 @@ h3 {
     background: linear-gradient(230.46deg, #5F5FF3 -2.98%, #B67DFF 68.14%, #FF83CD 104.54%);
  }
 
+ .table_thead{
+   background-color: rgb(110, 29, 103);
+   color: rgb(246, 237, 255);
+   text-align: center;
+}
+
+.table_tr{
+    background-color: rgb(246, 237, 255);
+    font-weight: bold;
+    text-align: center;
+}
