@@ -6,6 +6,7 @@ import NoMatch from './NoMatch';
 import Ranking from './components/Ranking';
 import Layout from './components/Layout';
 import NavigationBar from './components/NavigationBar';
+import StatsJoueurs from './components/StatsJoueurs';
 
 class App extends Component {
   render(){
@@ -18,6 +19,7 @@ class App extends Component {
             <Route exact path="/" element={<Home/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/ranking" element={<Ranking/>} />
+            <Route path="/statsJoueurs" element={<StatsJoueurs/>} />
             <Route path="*" element={<NoMatch/>} />
           </Routes>
         </Router>

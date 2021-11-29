@@ -6,8 +6,6 @@ import DetailRanking from './DetailRanking.js';
 import '../cssFiles/Ranking.css';
 
 
-
-
 class Ranking extends React.Component {
 
     //Constructeur : intialisation de chaque paramètre du state utilisés

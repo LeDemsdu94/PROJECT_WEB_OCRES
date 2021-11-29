@@ -18,15 +18,17 @@ export default class ControlledCarousel extends Component {
   }
 
   componentDidMount () {
+    this._loadLeagueLeaders();
+    }
 
-    getLeagueLeaders().then(data => {
-      console.log(data)
-      this.setState({
-        loading: true,
-        items: data,
+    _loadLeagueLeaders() {
+      getLeagueLeaders().then(data => {
+        console.log(data)
+        this.setState({
+          loading: true,
+          items: data,
+          })
         })
-      })
-
     }
 
     render() {

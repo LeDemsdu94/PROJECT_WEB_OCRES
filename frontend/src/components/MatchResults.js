@@ -1,25 +1,56 @@
 import React, { Component } from 'react';
 import { Tab, Table } from 'react-bootstrap';
 import '../cssFiles/DetailResults.css';
+import '../cssFiles/MatchResults.css';
 import {getMatchResults} from '../API/API_MatchResults'
 import DetailResults from './DetailResults';
-import { imagesList } from '../images'
+//Import la liste d'image
+import Detroit_Pistons from '../assets/logo_nba/Detroit_Pistons.png'
+import New_York_Knicks from '../assets/logo_nba/New_York_Knicks.png'
+import Portland_Trail_Blazers from '../assets/logo_nba/Portland_Trail_Blazers.png'
+import Sacramento_Kings from '../assets/logo_nba/Sacramento_Kings.png'
+import Utah_Jazz from '../assets/logo_nba/Utah_Jazz.png'
 
 export default class MatchResults extends Component {
   //Constructeur : intialisation de chaque paramètre du state utilisés
   constructor(props) {
     super(props);
-    var today = new Date();
-    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     this.state = {
       loading: false,
       items: null,
-      currentDate: date,
       tableauVar : 260,
+      imagesList: [
+        {
+          name: 'Detroit Pistons',
+          cover: Detroit_Pistons
+        },
+        {
+          name: 'New York Knicks',
+          cover: New_York_Knicks
+        },
+        {
+          name: 'Portland Trail Blazers',
+          cover: Portland_Trail_Blazers
+        },
+        {
+          name: 'Sacramento Kings',
+          cover: Sacramento_Kings
+        },
+        {
+          name: 'Utah Jazz',
+          cover: Utah_Jazz
+        }
+      ]
     }
   }
 
-  componentDidMount () {
+  //Mise à jour du state à la construction du component, avec les données collectés de l'api donnant la liste des joueurs
+  componentDidMount()
+  {
+      this._loadResults()
+  }
+
+  _loadResults() {
     getMatchResults().then(data => {
       console.log(data)
       this.setState({
@@ -27,15 +58,14 @@ export default class MatchResults extends Component {
         items: data,
         })
       })
-
-    }
+  }
 
     //Faire une fonction qui retourne un booléen true or false
     //Si la currentDate est différente de celle en store
     //La valeur de tableauVar prend alors +1
 
     render() {
-      var {loading, items, tableauVar, currentDate} = this.state;
+      var {loading, items, tableauVar, imagesList} = this.state;
 
       if(!loading)
       {
@@ -45,6 +75,7 @@ export default class MatchResults extends Component {
 
         return (
           <div>
+            <div class="bordure">
               <Table bordered hover >
                 <thead className="table_thead">
                   <tr>
@@ -57,10 +88,11 @@ export default class MatchResults extends Component {
                 </thead>
                 <tbody>
                     {items.games.slice(260, (tableauVar+5)).map(c => 
-                    <DetailResults key={c.id} home={c.home.name} homePoints={c.home_points} 
-                    away={c.away.name} awayPoints={c.away_points}/>)}
+                    <DetailResults key={c.id} id={c.id} home={c.home.name} homePoints={c.home_points} 
+                    away={c.away.name} awayPoints={c.away_points} logoList={imagesList}/>)}
                 </tbody>
               </Table> 
+              </div>
             </div>
         );
       }

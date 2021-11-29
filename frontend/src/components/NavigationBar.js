@@ -7,7 +7,7 @@ export default function NavigationBar(){
         <Navbar expand="lg" bg="dark" variant="dark">
             <Navbar.Brand href="/">
                 <img  src={logo} width="30" height="30" className="d-inline-block align top" alt="logo"/>
-                Tennis Mania
+                Basket Mania
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
@@ -15,6 +15,7 @@ export default function NavigationBar(){
                     <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/ranking">Ranking</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/statsJoueurs">Stats Players</Nav.Link></Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
