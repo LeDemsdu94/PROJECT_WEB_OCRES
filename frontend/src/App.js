@@ -8,6 +8,7 @@ import TeamStatistics from './components/TeamStatistics';
 import Layout from './components/Layout';
 import NavigationBar from './components/NavigationBar';
 import StatsJoueurs from './components/StatsJoueurs';
+import GraphScorers from './components/GraphScorers';
 
 class App extends Component {
   render(){
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/about" element={<About/>} />
             <Route path="/ranking" element={<Ranking/>} />
             <Route path="/statsJoueurs" element={<StatsJoueurs/>} />
+            <Route path="/statsJoueurs/graphscorers" element={<GraphScorers/>} />
             <Route path="*" element={<NoMatch/>} />
           </Routes>
         </Router>

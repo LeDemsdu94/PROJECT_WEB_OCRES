@@ -30,6 +30,8 @@ export default class BestScorer extends Component {
         items: data,
         bestScorer: [ ...this.state.bestScorer, ...data.categories[1].ranks].slice(0, 5),
         })
+
+      sessionStorage.setItem("bestScorers",JSON.stringify(this.state.bestScorer))
       })
   }
 
@@ -39,6 +41,8 @@ export default class BestScorer extends Component {
       {
         return <div>Loading...</div>;
       }
+
+      
       else{
         return (
           <div>
@@ -60,6 +64,7 @@ export default class BestScorer extends Component {
                 </tbody>
               </Table> 
               </div>
+               <a href="/statsJoueurs/graphscorers">See their stats</a>
             </div>
         );
       }
