@@ -1,6 +1,8 @@
 import React from 'react'
+import {Modal} from 'react-bootstrap'
 import '../cssFiles/DetailRanking.css';
 import '../cssFiles/home.css'
+import {Navbar, Nav, } from 'react-bootstrap';
 
 class DetailBestScorer extends React.Component {
 
@@ -11,6 +13,7 @@ class DetailBestScorer extends React.Component {
           }
         }        
   
+       
       render() {         
           return (
               <tr className="table_tr">
@@ -18,6 +21,7 @@ class DetailBestScorer extends React.Component {
                 <td>{this.props.name}</td>
                 <td>{this.props.teamMarket} {this.props.teamName}</td>
                 <td>{this.props.points}</td>
+                
               </tr>             
           )
       }
