@@ -76,7 +76,7 @@ export default class MatchResults extends Component {
         return (
           <div>
             <div class="bordure">
-              <Table bordered hover >
+              <Table reponsive bordered hover >
                 <thead className="table_thead">
                   <tr>
                     <th>Logo Home Team</th>

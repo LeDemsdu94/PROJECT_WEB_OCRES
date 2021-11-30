@@ -28,7 +28,7 @@ export default class BestScorer extends Component {
       this.setState({
         loading: true,
         items: data,
-        bestRebounder: [ ...this.state.bestRebounder, ...data.categories[17].ranks].slice(0, 5),
+        bestRebounder: [ ...this.state.bestRebounder, ...data.categories[29].ranks].slice(0, 5),
         })
       })
   }
@@ -43,7 +43,7 @@ export default class BestScorer extends Component {
         return (
           <div>
             <div class="bordure">
-              <Table bordered hover >
+              <Table reponsive bordered hover >
                 <thead className="table_thead">
                   <tr>
                     <th>Rank</th>

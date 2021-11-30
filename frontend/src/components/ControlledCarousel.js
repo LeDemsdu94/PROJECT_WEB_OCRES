@@ -50,7 +50,7 @@ export default class ControlledCarousel extends Component {
                     alt="First slide"
                   />
                   <Carousel.Caption className="carousel_caption">
-                    <h3>{items.categories[1].ranks[0].player.full_name} : {items.categories[1].ranks[0].average.points} {items.categories[1].name}</h3>
+                    <h3>{items.categories[26].ranks[0].player.full_name} : {items.categories[26].ranks[0].average.points} {items.categories[26].name}</h3>
                   </Carousel.Caption>
                 </Carousel.Item>
 
@@ -61,7 +61,7 @@ export default class ControlledCarousel extends Component {
                     alt="First slide"
                   />
                   <Carousel.Caption className="carousel_caption">
-                    <h3>{items.categories[2].ranks[0].player.full_name} : {items.categories[2].ranks[0].average.assists} {items.categories[2].name}</h3>
+                    <h3>{items.categories[30].ranks[0].player.full_name} : {items.categories[30].ranks[0].average.assists} {items.categories[30].name}</h3>
                   </Carousel.Caption>
                 </Carousel.Item>
 
@@ -72,7 +72,7 @@ export default class ControlledCarousel extends Component {
                     alt="First slide"
                   />
                   <Carousel.Caption className="carousel_caption">
-                    <h3>{items.categories[17].ranks[0].player.full_name} : {items.categories[17].ranks[0].average.rebounds} {items.categories[17].name}</h3>
+                    <h3>{items.categories[29].ranks[0].player.full_name} : {items.categories[29].ranks[0].average.rebounds} {items.categories[29].name}</h3>
                   </Carousel.Caption>
                 </Carousel.Item>
           </Carousel>

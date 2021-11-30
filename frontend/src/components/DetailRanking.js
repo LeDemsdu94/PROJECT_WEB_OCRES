@@ -1,8 +1,6 @@
 import React from 'react'
 import {Table} from 'react-bootstrap'
 import {getStanding} from '../API/API_Standing'
-import '/Users/henripetrelli/Desktop/PROJECT_WEB_OCRES/frontend/src/cssFiles/Ranking.css';
-
 import '../cssFiles/Ranking.css';
 
 class DetailRanking extends React.Component {

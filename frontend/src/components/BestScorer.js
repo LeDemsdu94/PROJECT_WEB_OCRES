@@ -28,7 +28,7 @@ export default class BestScorer extends Component {
       this.setState({
         loading: true,
         items: data,
-        bestScorer: [ ...this.state.bestScorer, ...data.categories[1].ranks].slice(0, 5),
+        bestScorer: [ ...this.state.bestScorer, ...data.categories[26].ranks].slice(0, 5),
         })
       })
   }
@@ -43,7 +43,7 @@ export default class BestScorer extends Component {
         return (
           <div>
             <div class="bordure">
-              <Table bordered hover >
+              <Table reponsive bordered hover >
                 <thead className="table_thead">
                   <tr>
                     <th>Rank</th>
@@ -58,7 +58,7 @@ export default class BestScorer extends Component {
                     teamMarket={c.teams[0].market} teamName={c.teams[0].name}
                     points={c.average.points}/>)}
                 </tbody>
-              </Table> 
+              </Table > 
               </div>
             </div>
         );
