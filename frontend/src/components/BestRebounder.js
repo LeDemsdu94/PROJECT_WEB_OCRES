@@ -30,6 +30,7 @@ export default class BestScorer extends Component {
         items: data,
         bestRebounder: [ ...this.state.bestRebounder, ...data.categories[29].ranks].slice(0, 5),
         })
+        sessionStorage.setItem("bestRebounders",JSON.stringify(this.state.bestRebounder))
       })
   }
 
@@ -60,6 +61,7 @@ export default class BestScorer extends Component {
                 </tbody>
               </Table> 
               </div>
+              <a href="/statsJoueurs/graphrebounders">See their stats</a>
             </div>
         );
       }
