@@ -7,6 +7,12 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
 var app = express();
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://Ritoune:22Henri@firstcluster.ueamy.mongodb.net/FirstCluster?retryWrites=true&w=majority',
+  { useNewUrlParser: true,
+    useUnifiedTopology: true })
+  .then(() => console.log('Connexion à MongoDB réussie !'))
+  .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 app.use(logger("dev"));
 app.use(express.json());
