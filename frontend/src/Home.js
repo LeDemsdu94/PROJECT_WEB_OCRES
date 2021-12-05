@@ -7,6 +7,7 @@ import Results from './components/Results';
 export default function Home(){
     return(
         <>
+        
         <div className="wrap">
                 <h2 className="textNewsTitle">Top leaders in statistics</h2>
                 <ControlledCarousel />
