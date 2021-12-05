@@ -1,10 +1,10 @@
 import React from 'react';
+import Test from './components/TestBack';
 
 export default function About(){
     return(
         <div>
-            <h2>Hello about us</h2>
-            <p>We are doing a projet d'info.</p>
+            <h2><Test /></h2>
         </div>
     )
 }
