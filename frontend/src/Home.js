@@ -1,8 +1,8 @@
 import React from 'react';
 import ControlledCarousel from './components/ControlledCarousel';
-import MatchResults from './components/MatchResults';
 import TopRanking from './components/TopRanking'
 import './cssFiles/home.css';
+import Results from './components/Results';
 
 export default function Home(){
     return(
@@ -13,14 +13,13 @@ export default function Home(){
         </div>
 
         <div>
-            <h2 className="matchResults">Match and results</h2>
-            <MatchResults />
-            <p>Mettre le component des matchs et résultats ici</p>
+            <h2 className="matchResults">Results of the day</h2>
+            <Results />
+            <br/>
         </div>
 
         <div>
             <p></p>
-            <p>Mettre le component des rankings ici</p>
             <TopRanking/>
         </div>
         </>

@@ -81,7 +81,4 @@ export default class ControlledCarousel extends Component {
       }
 
       }
-    
   }
-
-  

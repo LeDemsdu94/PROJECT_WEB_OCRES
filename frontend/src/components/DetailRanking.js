@@ -24,8 +24,6 @@ class DetailRanking extends React.Component {
               
               standingsWestern: [...this.state.standingsEastern, ...data.conferences[1].divisions[0].teams, ...data.conferences[1].divisions[1].teams, ...data.conferences[1].divisions[2].teams]
             })
-            console.log(this.state.standingsEastern)
-            console.log(this.state.standingsWestern)
           })
         }
   
