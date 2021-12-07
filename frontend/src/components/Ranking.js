@@ -91,7 +91,6 @@ class Ranking extends React.Component {
                 </tbody>
               </Table>
                    </div> 
-
                 </div>
           )
       }

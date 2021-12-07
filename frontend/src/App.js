@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
-import About from './About';
+import Admin from './Admin';
 import NoMatch from './NoMatch';
 import Ranking from './components/Ranking';
 import TeamStatistics from './components/TeamStatistics';
@@ -21,7 +21,7 @@ class App extends Component {
         <Router>
           <Routes>
             <Route exact path="/" element={<Home/>} />
-            <Route path="/about" element={<About/>} />
+            <Route path="/admin" element={<Admin/>} />
             <Route path="/ranking" element={<Ranking/>} />
             <Route path="/statsJoueurs" element={<StatsJoueurs/>} />
             <Route path="/statsJoueurs/graphscorers" element={<GraphScorers/>} />

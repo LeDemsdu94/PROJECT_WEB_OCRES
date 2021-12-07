@@ -9,6 +9,7 @@ var shopRouter = require("./routes/shop");
 
 var app = express();
 const mongoose = require('mongoose');
+const Thing = require('./models/thing');
 
 mongoose.connect('mongodb+srv://Ritoune:22Henri@firstcluster.ueamy.mongodb.net/FirstCluster?retryWrites=true&w=majority',
   { useNewUrlParser: true,
@@ -16,6 +17,7 @@ mongoose.connect('mongodb+srv://Ritoune:22Henri@firstcluster.ueamy.mongodb.net/F
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
+  
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');

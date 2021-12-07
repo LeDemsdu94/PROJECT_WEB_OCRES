@@ -92,7 +92,6 @@ class TopRanking extends React.Component {
                 </tbody>
               </Table>
                   </div> 
-
                 </div>
           )
       }
