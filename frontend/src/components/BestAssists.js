@@ -61,7 +61,7 @@ export default class BestScorer extends Component {
                 </tbody>
               </Table> 
               </div><br/><br/>
-              <a class="link" href="/statsJoueurs/graphassists">See their stats</a><br/><br/>
+              <a class="button" href="/statsJoueurs/graphassists">See their stats</a><br/><br/>
             </div>
         );
       }

@@ -9,12 +9,12 @@ export default function Home(){
         <>
         
         <div className="wrap">
-                <h2 className="textNewsTitle">Top leaders in statistics</h2>
+                <h2 className="textTitle">Top leaders in statistics</h2>
                 <ControlledCarousel />
         </div>
 
         <div>
-            <h2 className="matchResults">Results of the day</h2>
+            <h2 className="textTitle">Results of the day</h2>
             <Results />
             <br/>
         </div>

@@ -46,7 +46,7 @@ export default class Shopping extends Component {
       else{
 
         return (
-          <Container fluid="md">
+          <Container fluid="md" className="add-space">
             <Row md="auto" className="row">
               {this.state.socks.map(c => 
               <Col xs={7} sm={6} md={5}>

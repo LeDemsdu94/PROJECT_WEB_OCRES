@@ -13,6 +13,8 @@ import GraphScorers from './components/GraphScorers';
 import GraphRebounders from './components/GraphRebounders';
 import GraphAssists from './components/GraphAssists';
 import ShoppingDetails from './components/ShoppingDetails';
+import AdminUpdate from './components/AdminUpdate';
+import AdminDelete from './components/AdminDelete';
 
 
 class App extends Component {
@@ -27,6 +29,8 @@ class App extends Component {
             <Route path="/shop" element={<Shop/>} />
             <Route path="/shop/:id" element={<ShoppingDetails/>} />
             <Route path="/admin" element={<Admin/>} />
+            <Route path="/admin/shop/update/:id" element={<AdminUpdate/>} />
+            <Route path="/admin/shop/delete/:id" element={<AdminDelete/>} />
             <Route path="/ranking" element={<Ranking/>} />
             <Route path="/statsJoueurs" element={<StatsJoueurs/>} />
             <Route path="/statsJoueurs/graphscorers" element={<GraphScorers/>} />

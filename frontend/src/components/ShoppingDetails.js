@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
-import {getShop} from '../API/API_Shop'
 import '../cssFiles/Shop.css';
+import { Link } from 'react-router-dom';
 
 
 export default class Shopping extends Component {
@@ -37,15 +37,19 @@ export default class Shopping extends Component {
       else{
 
         return (
-          <Container fluid="md">
-                <Card style={{ width: '22rem' }}>
+          <Container fluid="md" className="cardDetails">
+                <Card style={{ width: '30rem' }}>
                     <Card.Img variant="top" src={item.imageUrl} />
                     <Card.Body>
                     <Card.Title>{item.price} dollars</Card.Title>
-                      <Card.Text className="description">
+                      <Card.Text className="titredetails">
                       {item.title}
                     </Card.Text>
-                    <Button variant="primary">Modify</Button>
+                    <Card.Text className="description">
+                      Description : {item.description}
+                    </Card.Text>
+                    <Link to={ '/admin/shop/update/' + item._id }>Modify</Link>
+                    <Link to={ '/admin/shop/delete/' + item._id } className="links_space">Delete</Link>
                     </Card.Body>
                 </Card>
           </Container>

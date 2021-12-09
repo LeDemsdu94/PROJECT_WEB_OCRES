@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, Nav, } from 'react-bootstrap';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/BasketMania.png';
 
 export default function NavigationBar(){
     return(

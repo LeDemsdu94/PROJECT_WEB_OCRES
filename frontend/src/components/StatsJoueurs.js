@@ -9,15 +9,15 @@ class StatsJoueurs extends React.Component{
         return(
             <>
             <div>
-                    <h2 className="matchResults">Top 5 Scorers</h2>
+                    <h2 className="textTitle">Top 5 Scorers</h2>
                     <BestScorer />
             </div>
             <div>
-                    <h2 className="matchResults">Top 5 Assists</h2>
+                    <h2 className="textTitle">Top 5 Assists</h2>
                     <BestAssists />
             </div>
             <div>
-                    <h2 className="matchResults">Top 5 Rebounders</h2>
+                    <h2 className="textTitle">Top 5 Rebounders</h2>
                     <BestRebounder />
             </div>
             </>

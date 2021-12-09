@@ -16,23 +16,28 @@ body {
     border-top:0;
  }
 
-  .title{
-        text-align: center;
-        color: rgb(253, 116, 155);
-        font-weight:bolder;
-        font-size: 50px;
-        padding-bottom: 3vw;
-        padding-top: 3vw;
-  }
-
   .shop{
       padding-top: 3vw;
   }
 
   .add-space {
-    margin: 4px;
+    margin-left: 20vw;
   }
+
+  .titredetails{
+    font-size: 17px;
+}
 
   .description{
       font-size: 15px;
+  }
+
+  /*Shopping details*/
+  .cardDetails{
+    padding-top: 3vw;
+    margin-left: 35vw;
+  }
+
+  .links_space{
+    padding-left: 3vw;
   }
