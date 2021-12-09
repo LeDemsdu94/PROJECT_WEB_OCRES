@@ -145,8 +145,9 @@ class GraphScorers extends React.PureComponent {
     
   return (
     <div>
+      <div className="joueur">
      <h3> {this.state.bestScorerState[0].player.full_name} </h3>
-     <h5> {this.state.bestScorerState[0].teams[0].name} </h5>
+     <h5> {"Team : "+this.state.bestScorerState[0].teams[0].name} </h5>
     <BarChart
       width={500}
       height={300}
@@ -157,11 +158,13 @@ class GraphScorers extends React.PureComponent {
       <XAxis dataKey="name" />
       <YAxis />
       <Tooltip />
-      <Bar dataKey="uv" fill="#82ca9d" />
+      <Bar dataKey="uv" fill="#d38741" />
     </BarChart>
+    </div>
     
+    <div className="joueur">
     <h3> {this.state.bestScorerState[1].player.full_name} </h3>
-    <h5> {this.state.bestScorerState[1].teams[0].name} </h5>
+    <h5> {"Team : "+this.state.bestScorerState[1].teams[0].name} </h5>
     <BarChart
     width={500}
     height={300}
@@ -172,11 +175,13 @@ class GraphScorers extends React.PureComponent {
     <XAxis dataKey="name" />
     <YAxis />
     <Tooltip />
-    <Bar dataKey="uv" fill="#82ca9d" />
+    <Bar dataKey="uv" fill="#d38741" />
     </BarChart>
+    </div>
 
+    <div className="joueur">
     <h3> {this.state.bestScorerState[2].player.full_name} </h3>
-    <h5> {this.state.bestScorerState[2].teams[0].name} </h5>
+    <h5> {"Team : "+this.state.bestScorerState[2].teams[0].name} </h5>
 <BarChart
 width={500}
 height={300}
@@ -187,11 +192,13 @@ data={data3}
 <XAxis dataKey="name" />
 <YAxis />
 <Tooltip />
-<Bar dataKey="uv" fill="#82ca9d" />
+<Bar dataKey="uv" fill="#d38741" />
 </BarChart>
+</div>
 
+<div className="joueur">
 <h3> {this.state.bestScorerState[3].player.full_name} </h3>
-<h5> {this.state.bestScorerState[3].teams[0].name} </h5>
+<h5> {"Team : "+this.state.bestScorerState[3].teams[0].name} </h5>
 <BarChart
       width={500}
       height={300}
@@ -202,11 +209,13 @@ data={data3}
       <XAxis dataKey="name" />
       <YAxis />
       <Tooltip />
-      <Bar dataKey="uv" fill="#82ca9d" />
+      <Bar dataKey="uv" fill="#d38741" />
     </BarChart>
+    </div>
 
+    <div className="joueur">
     <h3> {this.state.bestScorerState[4].player.full_name} </h3>
-    <h5> {this.state.bestScorerState[4].teams[0].name} </h5>
+    <h5> {"Team : "+this.state.bestScorerState[4].teams[0].name} </h5>
     <BarChart
     width={500}
     height={300}
@@ -217,8 +226,9 @@ data={data3}
     <XAxis dataKey="name" />
     <YAxis />
     <Tooltip />
-    <Bar dataKey="uv" fill="#82ca9d" />
+    <Bar dataKey="uv" fill="#d38741" />
     </BarChart>
+    </div>
     </div>
     
 

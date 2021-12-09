@@ -44,7 +44,7 @@ export default class BestScorer extends Component {
         return (
           <div>
             <div class="bordure">
-              <Table reponsive bordered hover >
+              <Table responsive bordered hover >
                 <thead className="table_thead">
                   <tr>
                     <th>Rank</th>
@@ -60,8 +60,8 @@ export default class BestScorer extends Component {
                     assists={c.average.assists}/>)}
                 </tbody>
               </Table> 
-              </div>
-              <a href="/statsJoueurs/graphassists">See their stats</a>
+              </div><br/><br/>
+              <a class="link" href="/statsJoueurs/graphassists">See their stats</a><br/><br/>
             </div>
         );
       }

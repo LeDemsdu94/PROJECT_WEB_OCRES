@@ -8,6 +8,7 @@ import {
   Tooltip,
   Legend
 } from "recharts";
+import '../cssFiles/Graphs.css';
 
 class GraphAssists extends React.PureComponent {
     constructor(props) {
@@ -144,8 +145,9 @@ class GraphAssists extends React.PureComponent {
     
   return (
     <div>
+      <div className="joueur">
      <h3> {this.state.bestAssistsState[0].player.full_name} </h3>
-     <h5> {this.state.bestAssistsState[0].teams[0].name} </h5>
+     <h5> {"Team : "+this.state.bestAssistsState[0].teams[0].name} </h5>
     <BarChart
       width={500}
       height={300}
@@ -156,68 +158,77 @@ class GraphAssists extends React.PureComponent {
       <XAxis dataKey="name" />
       <YAxis />
       <Tooltip />
-      <Bar dataKey="uv" fill="#82ca9d" />
+      <Bar dataKey="uv" fill="#d38741" />
     </BarChart>
-    
+    </div>
+
+    <div className="joueur">
     <h3> {this.state.bestAssistsState[1].player.full_name} </h3>
-    <h5> {this.state.bestAssistsState[1].teams[0].name} </h5>
-    <BarChart
-    width={500}
-    height={300}
-    data={data2}
-    
-    >
-    <CartesianGrid strokeDasharray="3 3" />
-    <XAxis dataKey="name" />
-    <YAxis />
-    <Tooltip />
-    <Bar dataKey="uv" fill="#82ca9d" />
-    </BarChart>
-
-    <h3> {this.state.bestAssistsState[2].player.full_name} </h3>
-    <h5> {this.state.bestAssistsState[2].teams[0].name} </h5>
-<BarChart
-width={500}
-height={300}
-data={data3}
-
->
-<CartesianGrid strokeDasharray="3 3" />
-<XAxis dataKey="name" />
-<YAxis />
-<Tooltip />
-<Bar dataKey="uv" fill="#82ca9d" />
-</BarChart>
-
-<h3> {this.state.bestAssistsState[3].player.full_name} </h3>
-<h5> {this.state.bestAssistsState[3].teams[0].name} </h5>
-<BarChart
+    <h5> {"Team : "+this.state.bestAssistsState[1].teams[0].name} </h5>
+      <BarChart
       width={500}
       height={300}
-      data={data4}
+      data={data2}
       
-    >
+      >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />
       <Tooltip />
-      <Bar dataKey="uv" fill="#82ca9d" />
-    </BarChart>
+      <Bar dataKey="uv" fill="#d38741" />
+      </BarChart>
+    </div>
 
-    <h3> {this.state.bestAssistsState[4].player.full_name} </h3>
-    <h5> {this.state.bestAssistsState[4].teams[0].name} </h5>
-    <BarChart
-    width={500}
-    height={300}
-    data={data5}
-    
-    >
-    <CartesianGrid strokeDasharray="3 3" />
-    <XAxis dataKey="name" />
-    <YAxis />
-    <Tooltip />
-    <Bar dataKey="uv" fill="#82ca9d" />
-    </BarChart>
+    <div className="joueur">
+    <h3> {this.state.bestAssistsState[2].player.full_name} </h3>
+    <h5> {"Team : "+this.state.bestAssistsState[2].teams[0].name} </h5>
+      <BarChart
+      width={500}
+      height={300}
+      data={data3}
+
+      >
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="name" />
+      <YAxis />
+      <Tooltip />
+      <Bar dataKey="uv" fill="#d38741" />
+      </BarChart>
+</div>
+
+<div className="joueur">
+        <h3> {this.state.bestAssistsState[3].player.full_name} </h3>
+        <h5> {"Team : "+this.state.bestAssistsState[3].teams[0].name} </h5>
+          <BarChart
+          width={500}
+          height={300}
+          data={data4}
+          
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Bar dataKey="uv" fill="#d38741" />
+        </BarChart>
+    </div>
+
+    <div className="joueur">
+      <h3> {this.state.bestAssistsState[4].player.full_name} </h3>
+      <h5> {"Team : "+this.state.bestAssistsState[4].teams[0].name} </h5>
+        <BarChart
+        width={500}
+        height={300}
+        data={data5}
+        
+        >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Bar dataKey="uv" fill="#d38741" />
+        </BarChart>
+    </div>
     </div>
     
 

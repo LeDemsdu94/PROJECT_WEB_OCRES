@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Shop from './Shop';
+import Admin from './Admin';
 import NoMatch from './NoMatch';
 import Ranking from './components/Ranking';
 import TeamStatistics from './components/TeamStatistics';
@@ -25,6 +26,7 @@ class App extends Component {
             <Route exact path="/" element={<Home/>} />
             <Route path="/shop" element={<Shop/>} />
             <Route path="/shop/:id" element={<ShoppingDetails/>} />
+            <Route path="/admin" element={<Admin/>} />
             <Route path="/ranking" element={<Ranking/>} />
             <Route path="/statsJoueurs" element={<StatsJoueurs/>} />
             <Route path="/statsJoueurs/graphscorers" element={<GraphScorers/>} />

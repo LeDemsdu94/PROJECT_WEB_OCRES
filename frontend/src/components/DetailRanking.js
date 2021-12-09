@@ -73,7 +73,6 @@ class DetailRanking extends React.Component {
                     <td class="col-md-1">{pa}</td>
                     <td class="col-md-1">{diff}</td>
                   </tr>
-                  
           )
       }
   }
