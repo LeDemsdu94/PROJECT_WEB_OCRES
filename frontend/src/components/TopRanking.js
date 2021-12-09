@@ -50,10 +50,10 @@ class TopRanking extends React.Component {
             <div class="wraper">
               <h1>Western Conference Top 5</h1> <br/>
               <div class="easternRanking">
-              <Table responsive bordered hover>
+              <Table responsive bordered hover >
                 <thead className="table_thead">
                   <tr>
-                    <th class="col-md-1">Rank</th>
+                  <th class="col-md-1">Rank</th>
                     <th class="col-md-2">Team</th>
                     <th class="col-md-1">W</th>
                     <th class="col-md-1">L</th>
@@ -64,18 +64,18 @@ class TopRanking extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
-                    {this.state.teamsEastern.map
+                {this.state.teamsEastern.map
                     (c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} 
                     market={c.market}/>)}
                 </tbody>
-              </Table>
+              </Table> 
                   </div> <br/> <br/> <br/> 
               <h1>Eastern Conference Top 5</h1> <br/>
               <div class="westernRanking">
-              <Table responsive bordered hover>
+              <Table responsive bordered hover >
                 <thead className="table_thead">
                   <tr>
-                    <th class="col-md-1">Rank</th>
+                  <th class="col-md-1">Rank</th>
                     <th class="col-md-2">Team</th>
                     <th class="col-md-1">W</th>
                     <th class="col-md-1">L</th>
@@ -86,11 +86,11 @@ class TopRanking extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
-                    {this.state.teamsWestern.map
+                {this.state.teamsWestern.map
                     (c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} 
                     market={c.market}/>)}
                 </tbody>
-              </Table>
+              </Table> 
                   </div> 
                 </div>
           )

@@ -14,8 +14,7 @@ body {
 
   /*Component carrousel*/
   .textNewsTitle{
-    margin-left: 40vw;
-    padding-top: 3vw;
+    text-align: center;
     color: white;
   }
 
@@ -41,7 +40,7 @@ body {
 
  /*Component match and results*/
 .matchResults{
-  margin-left: 40vw;
+  text-align: center;
   color: rgb(253, 116, 155);
   font-weight: bold;
   padding-bottom: 3vw;

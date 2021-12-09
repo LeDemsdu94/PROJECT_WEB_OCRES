@@ -48,7 +48,7 @@ class Ranking extends React.Component {
               <h1>NBA Rankings</h1>
               <h3 className="titre" > Eastern Conference</h3> <br/>
               <div class="easternRanking">
-              <Table reponsive bordered hover >
+              <Table responsive bordered hover >
                 <thead className="table_thead">
                   <tr>
                   <th class="col-md-1">Rank</th>
@@ -70,7 +70,7 @@ class Ranking extends React.Component {
                   </div> <br/> <br/>
               <h3 className="titre" > Western Conference</h3> <br/>
               <div class="westernRanking">
-              <Table reponsive bordered hover >
+              <Table responsive bordered hover >
                 <thead className="table_thead">
                   <tr>
                   <th class="col-md-1">Rank</th>

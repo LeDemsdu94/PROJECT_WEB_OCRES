@@ -47,7 +47,7 @@ export default class Results extends Component {
         return (
           <div>
             <div class="bordure">
-              <Table reponsive bordered hover >
+              <Table responsive bordered hover >
                 <thead className="table_thead">
                   <tr>
                     <th>Logo Home Team</th>
