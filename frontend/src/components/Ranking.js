@@ -1,4 +1,4 @@
-import React, {ListItem} from 'react';
+import React from 'react';
 import {Table} from 'react-bootstrap';
 import {getRanking} from '../API/API_Ranking.js'
 import DetailRanking from './DetailRanking.js';
@@ -41,8 +41,6 @@ class Ranking extends React.Component {
           })
         }
 
-  
-
       render() {
           return (
             
@@ -50,10 +48,10 @@ class Ranking extends React.Component {
               <h1>NBA Rankings</h1>
               <h3 className="titre" > Eastern Conference</h3> <br/>
               <div class="easternRanking">
-              <Table responsive bordered hover>
+              <Table reponsive bordered hover >
                 <thead className="table_thead">
                   <tr>
-                    <th class="col-md-1">Rank</th>
+                  <th class="col-md-1">Rank</th>
                     <th class="col-md-2">Team</th>
                     <th class="col-md-1">W</th>
                     <th class="col-md-1">L</th>
@@ -64,18 +62,18 @@ class Ranking extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
-                    {this.state.teamsEastern.map
+                {this.state.teamsEastern.map
                     (c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} 
                     market={c.market}/>)}
                 </tbody>
-              </Table>
+              </Table> 
                   </div> <br/> <br/>
               <h3 className="titre" > Western Conference</h3> <br/>
               <div class="westernRanking">
-              <Table responsive bordered hover>
-                <thead> 
-                  <tr className="table_thead">
-                    <th class="col-md-1">Rank</th>
+              <Table reponsive bordered hover >
+                <thead className="table_thead">
+                  <tr>
+                  <th class="col-md-1">Rank</th>
                     <th class="col-md-2">Team</th>
                     <th class="col-md-1">W</th>
                     <th class="col-md-1">L</th>
@@ -86,11 +84,11 @@ class Ranking extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
-                    {this.state.teamsWestern.map
+                {this.state.teamsWestern.map
                     (c => <DetailRanking key={c.id} id={c.id} rank={c.rank.conference} name={c.name} 
                     market={c.market}/>)}
                 </tbody>
-              </Table>
+              </Table> 
                    </div> 
                 </div>
 
