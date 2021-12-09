@@ -45,11 +45,12 @@ class Ranking extends React.Component {
 
       render() {
           return (
+            
             <div class="wraper">
               <h1>NBA Rankings</h1>
               <h3 className="titre" > Eastern Conference</h3> <br/>
               <div class="easternRanking">
-              <Table responsive>
+              <Table responsive bordered hover>
                 <thead className="table_thead">
                   <tr>
                     <th class="col-md-1">Rank</th>
@@ -71,7 +72,7 @@ class Ranking extends React.Component {
                   </div> <br/> <br/>
               <h3 className="titre" > Western Conference</h3> <br/>
               <div class="westernRanking">
-              <Table responsive>
+              <Table responsive bordered hover>
                 <thead> 
                   <tr className="table_thead">
                     <th class="col-md-1">Rank</th>
@@ -92,6 +93,8 @@ class Ranking extends React.Component {
               </Table>
                    </div> 
                 </div>
+
+                  
           )
       }
   }

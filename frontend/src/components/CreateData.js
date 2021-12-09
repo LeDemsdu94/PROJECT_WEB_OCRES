@@ -47,7 +47,7 @@ class CreateData extends React.Component {
     }
   
     handleSubmit(event) {
-      alert('Le nom a été soumis : ' + this.state.value);
+      alert('Item added');
       (async () => {
         const rawResponse = await fetch('http://localhost:3001/api/shop', {
           method: 'POST',
@@ -63,6 +63,7 @@ class CreateData extends React.Component {
         console.log(content);
       })();
       event.preventDefault();
+      this.target.reset();
     }
 
     createData(event){
@@ -91,9 +92,7 @@ class CreateData extends React.Component {
   
     render() {
       return (
-        
-
-<Form className="form" onSubmit={this.handleSubmit}>
+        <Form className="form"  ref={ form => this.messageForm = form }onSubmit={this.handleSubmit.bind(this)}>
 <h1 class="title">Add a new shop item</h1>
   <Row>
     <Col>
@@ -134,6 +133,9 @@ class CreateData extends React.Component {
   </Button>
 
 </Form>
+
+
+
 
 
 

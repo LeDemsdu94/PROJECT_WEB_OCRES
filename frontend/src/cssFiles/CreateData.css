@@ -5,16 +5,20 @@
 }*/
 
 .form {
-    max-width: 800px;
+    width: 60%;
     margin: 50px auto;
     position: relative;
+    border-radius: 2%;
+    border: solid #5543ca;
+    border-width: 1px;
   
   }
   .title {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 2em;
+    margin-top: 3%;
+    font-size: 1.6em;
     line-height: 48px;
     padding-bottom: 48px;
        color: #5543ca;
@@ -27,6 +31,8 @@
   }
   
   .mb-3 {
+    margin-left:10%;
+    margin-right:30%;
   left: 20px;
   bottom: 11px;
   font-size: 18px;
@@ -53,6 +59,8 @@
 
   .submit-btn {
     display: inline-block;
+    margin-left: 5%;
+    margin-bottom: 5%;
     background-color: #000;
      background-image: linear-gradient(125deg,#a72879,#064497);
     color: #fff;
@@ -64,3 +72,5 @@
     width:200px;
     cursor: pointer;
   }
+
+  
