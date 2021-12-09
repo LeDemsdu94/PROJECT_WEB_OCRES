@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
-import About from './About';
+import Shop from './Shop';
 import NoMatch from './NoMatch';
 import Ranking from './components/Ranking';
 import TeamStatistics from './components/TeamStatistics';
@@ -11,6 +11,8 @@ import StatsJoueurs from './components/StatsJoueurs';
 import GraphScorers from './components/GraphScorers';
 import GraphRebounders from './components/GraphRebounders';
 import GraphAssists from './components/GraphAssists';
+import ShoppingDetails from './components/ShoppingDetails';
+
 
 class App extends Component {
   render(){
@@ -21,7 +23,8 @@ class App extends Component {
         <Router>
           <Routes>
             <Route exact path="/" element={<Home/>} />
-            <Route path="/about" element={<About/>} />
+            <Route path="/shop" element={<Shop/>} />
+            <Route path="/shop/:id" element={<ShoppingDetails/>} />
             <Route path="/ranking" element={<Ranking/>} />
             <Route path="/statsJoueurs" element={<StatsJoueurs/>} />
             <Route path="/statsJoueurs/graphscorers" element={<GraphScorers/>} />
