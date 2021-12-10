@@ -27,6 +27,13 @@ export default class Shopping extends Component {
             })
         }
 
+        _myfunction() {
+
+          
+          alert("test");
+        
+        }  
+
     render() {
       var {loading, item} = this.state;
 
@@ -48,8 +55,8 @@ export default class Shopping extends Component {
                     <Card.Text className="description">
                       Description : {item.description}
                     </Card.Text>
-                    <Link to={ '/admin/shop/update/' + item._id }>Modify</Link>
-                    <Link to={ '/admin/shop/delete/' + item._id } className="links_space">Delete</Link>
+                    <Link to={ '/admin/shop/update/' + item._id } >Modify</Link>
+                    <input type="button" value="Delete" onclick={this._myfunction()} type="button" class="btn btn-danger" id="button"/>
                     </Card.Body>
                 </Card>
           </Container>

@@ -9,7 +9,6 @@ export default class AdminUpdate extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      loading: false,
       item: null,
     }
   }
@@ -18,21 +17,28 @@ export default class AdminUpdate extends Component {
         //récupère l'id
       const id = window.location.href.substring(40);
       console.log(id);
+      (async () => {
+        const rawResponse = await fetch('http://localhost:3001/api/shop/'+id, {
+          
+        });
+        const content = await rawResponse.json();
+      
+        console.log(content);
+        this.setState({
+          item: content,
+        })
+      })()
+      
         }
+      
 
     render() {
-      var {loading, item} = this.state;
-
-      if(!loading)
-      {
-        return <div>Loading...</div>;
-      }
-      else{
-
+      console.log(this.state.item)
         return (
-          <div>Mettre le form pour update</div>
+          
+          <div></div>
         );
       }
 
-      }
+    
   }

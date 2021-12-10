@@ -10,7 +10,9 @@ export default function Home(){
         
         <div className="wrap">
                 <h2 className="textTitle">Top leaders in statistics</h2>
+                <div className="carou">
                 <ControlledCarousel />
+                </div>
         </div>
 
         <div>
