@@ -149,7 +149,7 @@ export default class ControlledCarousel extends React.PureComponent {
                     src={kevin}
                   />
                   <div className="carousel-caption">
-                    <h3>{this.state.items.categories[26].ranks[0].player.full_name} : {this.state.items.categories[26].ranks[0].average.points} {this.state.items.categories[26].name}</h3>
+                    <h4>{this.state.items.categories[26].ranks[0].player.full_name} : {this.state.items.categories[26].ranks[0].average.points} {this.state.items.categories[26].name}</h4>
                   </div>
                 </div>
                 <div style={{ height: 400 }}>
@@ -158,7 +158,7 @@ export default class ControlledCarousel extends React.PureComponent {
                     src={chris}
                   />
                   <div className="carousel-caption">
-                    <h3>{this.state.items.categories[30].ranks[0].player.full_name} : {this.state.items.categories[30].ranks[0].average.assists} {this.state.items.categories[30].name}</h3>
+                    <h4>{this.state.items.categories[30].ranks[0].player.full_name} : {this.state.items.categories[30].ranks[0].average.assists} {this.state.items.categories[30].name}</h4>
                   </div>
                 </div>
                 <div style={{ height: 400 }}>
@@ -167,7 +167,7 @@ export default class ControlledCarousel extends React.PureComponent {
                     src={rudy}
                   />
                   <div className="carousel-caption">
-                    <h3>{this.state.items.categories[29].ranks[0].player.full_name} : {this.state.items.categories[29].ranks[0].average.rebounds} {this.state.items.categories[29].name}</h3>
+                    <h4>{this.state.items.categories[29].ranks[0].player.full_name} : {this.state.items.categories[29].ranks[0].average.rebounds} {this.state.items.categories[29].name}</h4>
                   </div>
                 </div>
               </RBCarousel>

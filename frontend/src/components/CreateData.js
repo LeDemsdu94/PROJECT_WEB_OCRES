@@ -63,6 +63,7 @@ class CreateData extends React.Component {
         console.log(content);
       })();
       event.preventDefault();
+      window.location.href='/shop';
     }
 
     createData(event){

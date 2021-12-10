@@ -32,6 +32,7 @@ export default class Shopping extends Component {
           fetch("http://localhost:3001/api/shop/" + id, {
           method: "DELETE",
           });
+          window.location.href='/shop';
         }
 
     render() {
