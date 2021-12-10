@@ -147,7 +147,7 @@ class GraphRebounders extends React.PureComponent {
       <div className="joueur">
      <h3> {this.state.bestReboundersState[0].player.full_name} </h3>
      <h5> {"Team : "+this.state.bestReboundersState[0].teams[0].name} </h5>
-    <BarChart
+    <BarChart className="graph"
       width={500}
       height={300}
       data={data1}
@@ -164,7 +164,7 @@ class GraphRebounders extends React.PureComponent {
     <div className="joueur">
     <h3> {this.state.bestReboundersState[1].player.full_name} </h3>
     <h5> {"Team : "+this.state.bestReboundersState[1].teams[0].name} </h5>
-    <BarChart
+    <BarChart className="graph"
     width={500}
     height={300}
     data={data2}
@@ -181,7 +181,7 @@ class GraphRebounders extends React.PureComponent {
     <div className="joueur">
     <h3> {this.state.bestReboundersState[2].player.full_name} </h3>
     <h5> {"Team : "+this.state.bestReboundersState[2].teams[0].name} </h5>
-<BarChart
+<BarChart className="graph"
 width={500}
 height={300}
 data={data3}
@@ -198,7 +198,7 @@ data={data3}
 <div className="joueur">
 <h3> {this.state.bestReboundersState[3].player.full_name} </h3>
 <h5> {"Team : "+this.state.bestReboundersState[3].teams[0].name} </h5>
-<BarChart
+<BarChart className="graph"
       width={500}
       height={300}
       data={data4}
@@ -215,7 +215,7 @@ data={data3}
     <div className="joueur">
     <h3> {this.state.bestReboundersState[4].player.full_name} </h3>
     <h5> {"Team : "+this.state.bestReboundersState[4].teams[0].name} </h5>
-    <BarChart
+    <BarChart className="graph"
     width={500}
     height={300}
     data={data5}
