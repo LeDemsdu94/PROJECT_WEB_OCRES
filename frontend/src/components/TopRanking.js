@@ -48,7 +48,7 @@ class TopRanking extends React.Component {
       render() {
           return (
             <div class="wraper">
-              <h1>Western Conference Top 5</h1> <br/>
+              <h1>Eastern Conference Top 5</h1> <br/>
               <div class="easternRanking">
               <Table responsive bordered hover >
                 <thead className="table_thead">
@@ -70,7 +70,7 @@ class TopRanking extends React.Component {
                 </tbody>
               </Table> 
                   </div> <br/> <br/> <br/> 
-              <h1>Eastern Conference Top 5</h1> <br/>
+              <h1>Western Conference Top 5</h1> <br/>
               <div class="westernRanking">
               <Table responsive bordered hover >
                 <thead className="table_thead">
