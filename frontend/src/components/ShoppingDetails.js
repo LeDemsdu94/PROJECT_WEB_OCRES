@@ -27,6 +27,13 @@ export default class Shopping extends Component {
             })
         }
 
+        handleClick(id) {
+          console.log(id);
+          fetch("http://localhost:3001/api/shop/" + id, {
+          method: "DELETE",
+          });
+        }
+
     render() {
       var {loading, item} = this.state;
 
@@ -50,6 +57,7 @@ export default class Shopping extends Component {
                     </Card.Text>
                     <Link to={ '/admin/shop/update/' + item._id }>Modify</Link>
                     <Link to={ '/admin/shop/delete/' + item._id } className="links_space">Delete</Link>
+                    <button onClick={() => this.handleClick(item._id)}>Supprimer</button>
                     </Card.Body>
                 </Card>
           </Container>

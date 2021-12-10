@@ -63,7 +63,6 @@ class CreateData extends React.Component {
         console.log(content);
       })();
       event.preventDefault();
-      this.target.reset();
     }
 
     createData(event){
